@@ -2,30 +2,30 @@
 
 <html lang="en">
 
-    <head>
-        <title>Open Status</title>
-    </head>
-    
-    <body>
-        
-        <div id="ops-container"></div>
-        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <script src="jquery.openStatus.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('div#ops-container').openStatus({
-                    sunday    : 'closed until Monday',
-                    monday    : 'open from 8am until 6.30pm',
-                    tuesday   : 'open from 8am until 6.30pm',
-                    wednesday : 'open from 8am until 6.30pm',
-                    thursday  : 'open from 8am until 6.30pm',
-                    friday    : 'open from 8am until 6.30pm',
-                    saturday  : 'closed until Monday'
-                });
-            });
-        </script>
-        
-    </body>
-    
+	<head>
+		<title>Open Status demo</title>
+	</head>
+
+	<body>
+
+		<div id="ops-container"></div>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="jquery.openStatus.js"></script>
+		<script>
+			$(function () {
+				$('#ops-container').openStatus({
+					sunday : 'closed until Monday',
+					monday : 'open from 8am until 6.30pm',
+					tuesday : 'open from 8am until 6.30pm',
+					wednesday : 'open from 8am until 6.30pm',
+					thursday : 'open from 8am until 6.30pm',
+					friday : 'open from 8am until 6.30pm',
+					saturday : 'closed until Monday'
+				});
+			});
+		</script>
+
+	</body>
+
 </html>
